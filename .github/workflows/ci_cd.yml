@@ -43,7 +43,7 @@ jobs:
         run: python scripts/get_new_aqi_weather.py
 
       - name: Clean & feature engineer
-        run: python scripts/cleaning_script.py
+        run: python scripts/data_clean_feature.py
 
       - name: Save to PostgreSQL
         run: python scripts/save_to_postgres.py
